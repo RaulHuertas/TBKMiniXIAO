@@ -18,3 +18,26 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+
+  #DONGLE
+  - board: seeeduino_xiao_ble
+    shield: tbkminixiao_dongle rgbled_adapter 
+    #snippet: studio-rpc-usb-uart zmk-usb-logging cdc-acm-console
+    snippet: studio-rpc-usb-uart 
+    cmake-args: -DCONFIG_ZMK_STUDIO=y 
+  #HALVES
+  - board: seeeduino_xiao_ble
+    shield: tbkminixiao_left rgbled_adapter
+    #snippet: studio-rpc-usb-uart zmk-usb-logging cdc-acm-console
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  - board: seeeduino_xiao_ble
+    shield: tbkminixiao_right rgbled_adapter 
+    #snippet: studio-rpc-usb-uart zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  #RESET
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+

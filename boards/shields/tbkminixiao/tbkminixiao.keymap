@@ -1,0 +1,114 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+                        bindings = <
+				 &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+                };
+
+	layer_2 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+	layer_3 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+	layer_4 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+
+	layer_5 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+
+	layer_6 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+
+
+	layer_7 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+	layer_8 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+	layer_9 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+
+	layer_10 {
+                        bindings = <
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+			     &none     &none      &none     &none      &none     &none      &none      &none      &none     &none        &none     &none   
+                        >;
+        };
+
+
+};
+
+
+};

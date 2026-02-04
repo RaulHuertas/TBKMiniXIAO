@@ -1,0 +1,119 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ * 
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 8000  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 20
+#include <dt-bindings/zmk/pointing.h>
+
+/ {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+  &kp Q           &kp W           &kp E             &kp R        &kp T  &kp Y          &kp U        &kp I              &kp O            &kp P
+  &hm LEFT_ALT A  &hm LEFT_WIN S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G  &kp H          &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_GUI L  &hm RIGHT_ALT SEMI
+  &kp Z           &kp X           &kp C             &kp V        &kp B  &kp N          &kp M        &kp COMMA          &kp DOT          &kp FSLH
+  &none           &none           &lt 2 TAB         &lt 3 SPACE  &mo 1  &kp BACKSPACE  &kp ENTER    &lt 8 ESCAPE       &none            &none
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+  &kp PRINTSCREEN     &kp HOME            &kp END               &kp APOS        &kp RBKT              &kp N6      &kp N7     &kp N8              &kp N9     &kp N0
+  &hm LEFT_ALT GRAVE  &hm LEFT_WIN EQUAL  &hm LEFT_SHIFT MINUS  &hm LCTRL NUHS  &kp NON_US_BACKSLASH  &kp LEFT    &kp DOWN   &kp UP              &kp RIGHT  &hm RIGHT_ALT F3
+  &kp LEFT_BRACKET    &none               &none                 &none           &to 4                 &kp N1      &kp N2     &kp N3              &kp N4     &kp N5
+  &none               &none               &kp TAB               &kp SPACE       &to 0                 &kp DELETE  &kp ENTER  &kp K_CONTEXT_MENU  &none      &none
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+  &kp INSERT    &kp PG_UP     &kp PG_DN       &bt BT_CLR        &bt BT_CLR_ALL  &kp F6         &kp F7     &kp F8   &kp F9   &kp F10
+  &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none           &none          &none      &none    &kp F11  &kp F12
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4    &kp F1         &kp F2     &kp F3   &kp F4   &kp F5
+  &none         &none         &kp TAB         &kp SPACE         &to 0           &kp BACKSPACE  &kp ENTER  &kp ESC  &none    &none
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+  &none  &none  &none    &none      &none  &kp C_MUTE      &kp C_PP        &mkp LCLK       &mkp RCLK        &mkp MCLK
+  &none  &none  &none    &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP
+  &none  &none  &none    &none      &none  &kp CAPSLOCK    &studio_unlock  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN
+  &none  &none  &kp TAB  &kp SPACE  &to 0  &kp BACKSPACE   &kp ENTER       &kp ESC         &none            &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+  &kp Q  &kp W  &kp E      &kp R      &kp T  &kp Y          &kp U  &kp I      &kp O       &kp P
+  &kp A  &kp S  &kp D      &kp F      &kp G  &kp H          &kp J  &kp K      &kp L       &kp SEMICOLON
+  &kp Z  &kp X  &kp C      &kp V      &kp B  &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp MINUS
+  &none  &none  &lt 6 TAB  &kp SPACE  &mo 5  &kp BACKSPACE  &none  &none      &none       &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+  &kp BACKSPACE  &kp F5        &kp F6        &kp F7        &kp F8  &none  &none  &none  &none  &none
+  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none  &none  &none  &none  &none
+  &kp NUMBER_6   &kp N7        &kp N8        &kp N9        &kp N0  &none  &none  &none  &none  &to 0
+  &none          &none         &none         &kp SPACE     &none   &none  &none  &none  &none  &none
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+  &none             &kp LC(F5)        &kp LC(F6)        &kp LC(F7)        &kp LC(F8)  &none  &none  &none  &none  &none
+  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)  &none  &none  &none  &none  &none
+  &kp LC(NUMBER_6)  &kp LC(N7)        &kp LC(N8)        &kp LC(N9)        &kp LC(N0)  &none  &none  &none  &none  &to 0
+  &none             &none             &none             &kp SPACE         &none       &none  &none  &none  &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+  &none              &none            &kp C_STOP  &none       &none  &none  &none  &none  &none  &none
+  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY  &kp C_MUTE  &none  &none  &none  &none  &none  &none
+  &none              &none            &kp C_PREV  &kp C_NEXT  &none  &none  &none  &none  &none  &none
+  &none              &none            &none       &none       &none  &none  &none  &none  &none  &none
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+        };
+    };
+};

@@ -1,0 +1,15 @@
+file_format: "1"
+id: tbkminixiao
+name: TBKMiniXIAO
+type: shield
+url: https://github.com/RaulHuertas/TBKMiniXIAO/
+requires: [seeeduino_xiao_ble]
+exposes: []
+features:
+  - keys
+  - studio
+  - dongle
+siblings:
+  - tbkmini_left
+  - tbkmini_right
+  - tbkmini_dongle
