@@ -2,7 +2,7 @@ if SHIELD_TBKMINIXIAO_LEFT || SHIELD_TBKMINIXIAO_DONGLE
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "SkeletylXIAO"
+    default "TBKMiniXIAO"
 
 
 config LOG_PROCESS_THREAD_STARTUP_DELAY_MS
