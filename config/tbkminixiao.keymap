@@ -39,7 +39,7 @@
             bindings = <
   &kp PRINTSCREEN     &kp HOME            &kp END               &kp APOS        &kp RBKT              &kp N6      &kp N7     &kp N8              &kp N9     &kp N0
   &hm LEFT_ALT GRAVE  &hm LEFT_WIN EQUAL  &hm LEFT_SHIFT MINUS  &hm LCTRL NUHS  &kp NON_US_BACKSLASH  &kp LEFT    &kp DOWN   &kp UP              &kp RIGHT  &hm RIGHT_ALT F3
-  &kp LEFT_BRACKET    &none               &none                 &none           &to 4                 &kp N1      &kp N2     &kp N3              &kp N4     &kp N5
+  &kp LEFT_BRACKET    &studio_unlock               &none                 &none           &to 4                 &kp N1      &kp N2     &kp N3              &kp N4     &kp N5
   &none               &none               &kp TAB               &kp SPACE       &to 0                 &kp DELETE  &kp ENTER  &kp K_CONTEXT_MENU  &none      &none
             >;
         };
