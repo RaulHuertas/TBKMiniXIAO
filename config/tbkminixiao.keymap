@@ -29,37 +29,37 @@
 
         default_layer {
             bindings = <
-  &kp TAB           &kp Q           &kp W           &kp E             &kp R        &kp T           &kp Y          &kp U        &kp I              &kp O            &kp P               &kp BSPC
-  &kp LSHIFT        &hm LEFT_ALT A  &hm LEFT_WIN S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G           &kp H          &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_WIN L  &hm RIGHT_ALT SEMI  &kp RSHIFT
-  &kp LEFT_CONTROL  &kp Z           &kp X           &kp C             &kp V        &kp B           &kp N          &kp M        &kp COMMA          &kp DOT          &kp FSLH            &kp RIGHT_CONTROL
-  &none             &none           &none           &lt 2 TAB         &lt 3 SPACE  &none           &kp BACKSPACE  &kp ENTER    &kp ESCAPE         &none            &none               &none
+  &kp TAB           &kp Q           &kp W           &kp E             &kp R        &kp T  &kp Y          &kp U        &kp I              &kp O            &kp P               &kp BSPC
+  &kp LSHIFT        &hm LEFT_ALT A  &hm LEFT_WIN S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G  &kp H          &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_WIN L  &hm RIGHT_ALT SEMI  &kp RSHIFT
+  &kp LEFT_CONTROL  &kp Z           &kp X           &kp C             &kp V        &kp B  &kp N          &kp M        &kp COMMA          &kp DOT          &kp FSLH            &kp RIGHT_CONTROL
+  &none             &none           &none           &lt 2 TAB         &lt 3 SPACE  &mo 1  &kp BACKSPACE  &kp ENTER    &kp ESCAPE         &none            &none               &none
             >;
         };
 
         sym_numbers {
             bindings = <
-  &kp TAB     &kp PRINTSCREEN   &kp HOME      &kp END    &kp APOS        &kp RBKT        &kp N6          &kp N7        &kp N8              &kp N9     &kp N0             &kp DEL
-  &kp LSHIFT  &kp GRAVE         &kp EQUAL     &kp MINUS  &hm LCTRL NUHS  &kp F2          &kp LEFT        &kp DOWN      &kp UP              &kp RIGHT  &hm LEFT_SHIFT F3  &kp RSHIFT
-  &kp NUBS    &kp LEFT_BRACKET  &kp CAPSLOCK  &none      &none           &none           &kp N1          &kp N2        &kp N3              &kp N4     &kp N5             &none
-  &none       &none             &none         &kp TAB  &kp SPACE           &to 0         &kp DELETE     &kp ENTER      &kp K_CONTEXT_MENU  &none      &none              &none
+  &kp TAB     &kp PRINTSCREEN   &kp HOME      &kp END    &kp APOS        &kp RBKT  &kp N6      &kp N7     &kp N8              &kp N9     &kp N0             &kp DEL
+  &kp LSHIFT  &kp GRAVE         &kp EQUAL     &kp MINUS  &hm LCTRL NUHS  &kp F2    &kp LEFT    &kp DOWN   &kp UP              &kp RIGHT  &hm LEFT_SHIFT F3  &kp RSHIFT
+  &kp NUBS    &kp LEFT_BRACKET  &kp CAPSLOCK  &none      &none           &none     &kp N1      &kp N2     &kp N3              &kp N4     &kp N5             &none
+  &none       &none             &none         &kp TAB    &kp SPACE       &to 0     &kp DELETE  &kp ENTER  &kp K_CONTEXT_MENU  &none      &none              &none
             >;
         };
 
         functions {
             bindings = <
-  &none       &kp INSERT    &kp PG_UP     &kp PG_DN       &bt BT_CLR        &bt BT_CLR_ALL      &kp F6          &kp F7       &kp F8      &kp F9         &kp F10    &none
-  &none       &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none               &none           &none        &none       &kp F11        &kp F12    &none
-  &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4        &kp F1          &kp F2       &kp F3      &kp F4         &kp F5     &none
-  &none       &none         &none         &kp TAB         &kp SPACE           &to 0             &kp BACKSPACE   &kp ENTER    &kp ESCAPE  &none          &none      &none
+  &none  &kp INSERT    &kp PG_UP     &kp PG_DN       &bt BT_CLR        &bt BT_CLR_ALL  &kp F6         &kp F7     &kp F8      &kp F9   &kp F10  &none
+  &none  &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none           &none          &none      &none       &kp F11  &kp F12  &none
+  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4    &kp F1         &kp F2     &kp F3      &kp F4   &kp F5   &none
+  &none  &none         &none         &kp TAB         &kp SPACE         &to 0           &kp BACKSPACE  &kp ENTER  &kp ESCAPE  &none    &none    &none
             >;
         };
 
         mouse_nav {
             bindings = <
-  &none    &none      &none      &none      &none      &none           &kp C_MUTE      &kp C_PP         &mkp LCLK          &mkp RCLK        &mkp MCLK       &none
-  &none    &none      &mkp MCLK  &mkp LCLK  &mkp RCLK  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP       &mmv MOVE_RIGHT  &msc SCRL_UP    &none
-  &none    &none      &none      &none      &none      &none           &kp CAPSLOCK    &studio_unlock   &msc SCRL_LEFT     &msc SCRL_RIGHT  &msc SCRL_DOWN  &none
-  &none       &none         &none         &kp TAB         &kp SPACE           &to 0             &kp BACKSPACE   &kp ENTER    &kp ESCAPE  &none          &none      &none
+  &none  &none  &none      &none      &none      &none  &kp C_MUTE      &kp C_PP        &mkp LCLK       &mkp RCLK        &mkp MCLK       &none
+  &none  &none  &mkp MCLK  &mkp LCLK  &mkp RCLK  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP    &none
+  &none  &none  &none      &none      &none      &none  &kp CAPSLOCK    &studio_unlock  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN  &none
+  &none  &none  &none      &kp TAB    &kp SPACE  &to 0  &kp BACKSPACE   &kp ENTER       &kp ESCAPE      &none            &none           &none
             >;
         };
 
