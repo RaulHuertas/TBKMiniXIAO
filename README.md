@@ -1,8 +1,14 @@
 # TBK mini ZMK Port, by Nuty L.A.B.S.
 This is a ZMK port for a TBK mini. It uses the XIAO BLE microcontroller, and our XIAOntegrated PCB
 
+[TBKMini](images/tbkminixiao.jpeg)
 ## Features
+- Bluetooth support
+- 42 programable buttons
+- USB HID support on the left side
+- ZMK studio compatible
 
+  
 ## Changing the keymap 
 
 Edit the file config/tbkminixiao.keymap. The list of available keycodes can be found here https://zmk.dev/docs/keymaps/list-of-keycodes
