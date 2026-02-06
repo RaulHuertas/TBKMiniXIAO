@@ -38,10 +38,10 @@
 
         sym_numbers {
             bindings = <
-  &kp TAB     &kp PRINTSCREEN       &kp HOME        &kp END    &kp APOS        &kp RBKT        &kp N6          &kp N7        &kp N8        &kp N9     &kp N0             &kp DEL
-  &kp LSHIFT  &hm LEFT_SHIFT GRAVE  &hm LALT EQUAL  &kp MINUS  &hm LCTRL NUHS  &kp F2          &kp LEFT        &kp DOWN      &kp UP        &kp RIGHT  &hm LEFT_SHIFT F3  &kp RSHIFT
-  &kp NUBS    &kp F5                &kp F9          &kp F10    &kp F11         &kp F12         &kp N1          &kp N2        &kp N3        &kp N4     &kp N5             &to 2
-  &none       &none                 &none           &to 3      &kp C_MUTE      &studio_unlock  &studio_unlock  &kp C_VOL_UP  &kp C_VOL_DN  &none      &none              &none
+  &kp TAB     &kp PRINTSCREEN   &kp HOME      &kp END    &kp APOS        &kp RBKT        &kp N6          &kp N7        &kp N8        &kp N9     &kp N0             &kp DEL
+  &kp LSHIFT  &kp GRAVE         &kp EQUAL     &kp MINUS  &hm LCTRL NUHS  &kp F2          &kp LEFT        &kp DOWN      &kp UP        &kp RIGHT  &hm LEFT_SHIFT F3  &kp RSHIFT
+  &kp NUBS    &kp LEFT_BRACKET  &kp CAPSLOCK  &none      &none           &none           &kp N1          &kp N2        &kp N3        &kp N4     &kp N5             &none
+  &none       &none             &none         &to 3      &kp C_MUTE      &studio_unlock  &studio_unlock  &kp C_VOL_UP  &kp C_VOL_DN  &none      &none              &none
             >;
         };
 
